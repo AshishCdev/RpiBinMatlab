@@ -1,0 +1,46 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   4 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c3_HelloWorld"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_LedOut"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LedBlinkWithConsolePrint.LedOut"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "count1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "count1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "count2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "count2"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

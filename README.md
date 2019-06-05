@@ -3,7 +3,8 @@ Libraries to compile the generated code from matlab in raspberry pi
 
 # To setup 
 1. git clone https://github.com/AshishCdev/RpiBinMatlab.git
-2. sudo sh install.sh
+2. sudo chmod +x install.sh
+3. ./install.sh
 
 # To build and run the project
 1. Put your auto generated file in projects folder

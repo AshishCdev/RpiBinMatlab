@@ -3,9 +3,9 @@
  *
  * Code generation for model "HelloWorld".
  *
- * Model version              : 1.17
+ * Model version              : 1.27
  * Simulink Coder version : 8.12 (R2017a) 16-Feb-2017
- * C source code generated on : Tue Jun  4 18:03:57 2019
+ * C source code generated on : Thu Jun  6 11:26:41 2019
  *
  * Target selection: grt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -80,12 +80,13 @@ typedef struct {
 
 /* External inputs (root inport signals with auto storage) */
 typedef struct {
-  real_T InSw;                         /* '<Root>/InSw' */
+  boolean_T gpio0;                     /* '<Root>/gpio0' */
 } ExtU_HelloWorld_T;
 
 /* External outputs (root outports fed by signals with auto storage) */
 typedef struct {
-  real_T OutLed;                       /* '<Root>/OutLed' */
+  boolean_T gpio3;                     /* '<Root>/gpio3' */
+  real_T gpio2;                        /* '<Root>/gpio2' */
 } ExtY_HelloWorld_T;
 
 /* Real-time Model Data Structure */

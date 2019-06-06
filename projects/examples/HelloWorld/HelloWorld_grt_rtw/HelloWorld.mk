@@ -2,7 +2,7 @@
 ## Makefile generated for Simulink model 'HelloWorld'. 
 ## 
 ## Makefile     : HelloWorld.mk
-## Generated on : Tue Jun 04 18:03:59 2019
+## Generated on : Thu Jun 06 11:26:44 2019
 ## MATLAB Coder version: 3.3 (R2017a)
 ## 
 ## Build Info:
@@ -29,7 +29,7 @@ MATLAB_ROOT               = /usr/local/MATLAB/R2017a
 MATLAB_BIN                = /usr/local/MATLAB/R2017a/bin
 MATLAB_ARCH_BIN           = /usr/local/MATLAB/R2017a/bin/glnxa64
 MASTER_ANCHOR_DIR         = 
-START_DIR                 = ./
+START_DIR                 = /home/ashish/work/RpiBinMatlab/projects/examples/HelloWorld
 ARCH                      = glnxa64
 SOLVER                    = 
 SOLVER_OBJ                = 
@@ -37,7 +37,7 @@ CLASSIC_INTERFACE         = 0
 TGT_FCN_LIB               = ISO_C
 MODEL_HAS_DYNAMICALLY_LOADED_SFCNS = 0
 MODELREF_LINK_RSPFILE_NAME = HelloWorld_ref.rsp
-RELATIVE_PATH_TO_ANCHOR   = ./
+RELATIVE_PATH_TO_ANCHOR   = ..
 C_STANDARD_OPTS           = -std=c99 -pedantic -fwrapv
 CPP_STANDARD_OPTS         = -fwrapv
 
@@ -188,7 +188,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I$(MATLAB_ROOT)/simulink/include/sf_runtime -I$(START_DIR)/HelloWorld_grt_rtw -I/home/pi -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common
+INCLUDES_BUILDINFO = -I$(START_DIR) -I$(MATLAB_ROOT)/simulink/include/sf_runtime -I$(START_DIR)/HelloWorld_grt_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
